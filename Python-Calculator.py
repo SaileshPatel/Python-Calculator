@@ -67,28 +67,50 @@ while keepProgramRunning:
 		print addition(a, b)
 		# After this operator has been completed, the program goes back to the beginning.
 
+	# If the user entered '2', then the program performs this.
 	elif choice == "2":
+		# Collected user inputted string
 		a = raw_input("Please enter the number you wish to subtract from: ")
+		# Collected user inputted string
 		b = raw_input("Please enter the number you wish to subrract by: ")
+		# Printed string
 		print "Here's your answer!"
+		# Print the result of the function 'subtractions' with the parameters 'a' and 'b'
 		print subtraction(a, b)
 
+	# If the user entered '3', then the program performs this.
 	elif choice == "3":
+		# Collected user inputted string
 		a = raw_input("Please enter the number you wish to multiply: ")
+		# Collected user inputted string
 		b = raw_input("Please enter the number yuo wish to multiply by: ")
+		# Printed string
 		print "Here's your answer!"
+		# Print the result of the function 'multiplication' with the parameters 'a' and 'b'
 		print multiplication(a, b)
 
+	# If the user entered '4', the program perfoms this.
 	elif choice == "4":
+		# Collected user inputted string
 		a = raw_input("Please enter the number you wish to divide: ")
+		# Collected user inputted string
 		b = raw_input("Please enter the amount you wish to divide by: ")
+		# Printed string
 		print "Here's your answer!"
+		# Print the result of the function 'division' with the parameters 'a' and 'b'
 		print division(a, b)
 
+	# If the user entered '5' this happens.
 	elif choice == "5":
+		# Printed string
 		print "Bye!"
+		# Assigns the value 'False' to the variable 'keepProgramRunning' which closes the program.
+		# This is because this program only runs if 'keepProgramRunning' has the value of 'True'
 		keepProgramRunning = False
 
+	# If the user enters other value, this happens.
 	else:
+		# Print string
 		print "Please choose a valid option."
 		print "\n"
+		# After this, the program goes back to the beginning.
